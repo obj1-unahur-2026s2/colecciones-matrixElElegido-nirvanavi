@@ -40,4 +40,8 @@ object nave {
     method elPasajeroConMasVitalidad() {
         return pasajeros.max({unPasajero => unPasajero.vitalidad()}).vitalidad()
     }
+
+    method estaEquilibrada() {
+      return self.elPasajeroConMasVitalidad()
+    }
 }
